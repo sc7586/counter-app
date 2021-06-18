@@ -1,8 +1,6 @@
-const person = {
-  name: "Suman",
-  walk() {},
-  talk() {},
-};
-person.talk();
-const targetMem = "name";
-person[targetMem] = "Mosh";
+const first = { name: "Suman" };
+const sec = { job: "ins" };
+
+const com = { ...first, location: "kol", ...sec };
+
+console.log(com);
